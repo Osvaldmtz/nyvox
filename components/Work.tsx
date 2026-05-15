@@ -17,7 +17,7 @@ export function Work() {
             Trabajo seleccionado
           </h2>
           <Link
-            href="#contacto"
+            href="/#contacto"
             className="inline-flex w-fit rounded-full bg-nyvox-blue px-7 py-3 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
           >
             Hablemos de tu producto

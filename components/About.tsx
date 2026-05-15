@@ -21,7 +21,7 @@ export function About() {
             tomamos lo tratamos como si fuera nuestro.
           </p>
           <Link
-            href="#contacto"
+            href="/#contacto"
             className="mt-12 inline-flex rounded-full bg-nyvox-blue px-7 py-3 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
           >
             Trabajar con Nyvox

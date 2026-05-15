@@ -63,7 +63,7 @@ export function Hero() {
             transition={{ delay: 0.72, duration: 0.55, ease: easeEditorial }}
           >
             <Link
-              href="#contacto"
+              href="/#contacto"
               className="inline-flex rounded-full bg-nyvox-blue px-8 py-3.5 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
             >
               Iniciar proyecto

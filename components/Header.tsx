@@ -25,7 +25,7 @@ const links = [
   { href: "#trabajo", label: "Trabajo" },
   { href: "#proceso", label: "Proceso" },
   { href: "#nosotros", label: "Nosotros" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#contacto", label: "Contacto" },
 ] as const;
 
 const overlayMotion = {
@@ -257,7 +257,7 @@ export function Header() {
               </motion.nav>
 
               <Link
-                href="#contacto"
+                href="/#contacto"
                 onClick={closeMenu}
                 className="mx-auto mt-12 flex h-14 w-full max-w-sm items-center justify-center rounded-full bg-nyvox-blue px-8 text-center text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
               >
@@ -297,7 +297,7 @@ export function Header() {
             ))}
           </nav>
           <Link
-            href="#contacto"
+            href="/#contacto"
             className="hidden shrink-0 rounded-full bg-nyvox-blue px-5 py-2.5 text-[14px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90 md:inline-flex"
           >
             Iniciar proyecto
