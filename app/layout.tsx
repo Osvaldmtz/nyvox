@@ -1,5 +1,7 @@
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
@@ -83,6 +85,8 @@ export default function RootLayout({
       <body className="min-h-full bg-white text-nyvox-black">
         <SmoothScroll>{children}</SmoothScroll>
         <WhatsAppButton />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
