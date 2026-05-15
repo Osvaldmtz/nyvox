@@ -10,14 +10,36 @@ const fadeUp = {
   animate: { opacity: 1, y: 0 },
 };
 
+function ArrowRightIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="shrink-0"
+      aria-hidden
+    >
+      <path
+        d="M5 12h14M13 6l6 6-6 6"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function NotFound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-white px-8 text-center">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white px-8 text-center">
       <motion.span
-        className="text-[180px] font-bold leading-none tracking-tighter text-[#1464F0] md:text-[280px]"
-        initial={{ opacity: 0, scale: 0.8 }}
+        className="text-[180px] font-bold leading-none tracking-tighter text-[#1464F0] sm:text-[240px] md:text-[320px]"
+        initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, ease }}
+        transition={{ duration: 0.6, ease }}
       >
         404
       </motion.span>
@@ -45,11 +67,12 @@ export default function NotFound() {
       >
         <Link
           href="/"
-          className="inline-flex h-14 items-center justify-center rounded-full bg-black px-8 text-base font-medium text-white transition-colors duration-300 hover:bg-[#1464F0]"
+          className="inline-flex h-14 items-center justify-center gap-2 rounded-full bg-black px-8 text-base font-medium text-white transition-colors hover:bg-[#1464F0]"
         >
           Volver al inicio
+          <ArrowRightIcon />
         </Link>
       </motion.div>
-    </div>
+    </main>
   );
 }
