@@ -61,19 +61,12 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.72, duration: 0.55, ease: easeEditorial }}
-            className="flex flex-col gap-4 sm:flex-row sm:items-center"
           >
             <Link
-              href="/#contacto"
-              className="inline-flex h-14 items-center justify-center rounded-full bg-nyvox-blue px-8 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
+              href="#contacto"
+              className="inline-flex rounded-full bg-nyvox-blue px-8 py-3.5 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
             >
               Iniciar proyecto
-            </Link>
-            <Link
-              href="/#trabajo"
-              className="inline-flex h-14 w-full items-center justify-center rounded-full border border-black/10 px-8 text-base font-medium text-black transition-colors hover:bg-black hover:text-white sm:w-auto sm:border-0 sm:hover:bg-transparent sm:hover:text-[#1464F0]"
-            >
-              Ver trabajo →
             </Link>
           </motion.div>
         </div>
