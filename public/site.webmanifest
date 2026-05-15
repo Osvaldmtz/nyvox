@@ -1,0 +1,29 @@
+{
+  "name": "Nyvox",
+  "short_name": "Nyvox",
+  "description": "Software hecho con visión.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1464f0",
+  "theme_color": "#1464f0",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
