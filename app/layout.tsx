@@ -1,3 +1,4 @@
+import { CustomCursor } from "@/components/ui/CustomCursor";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { Analytics } from "@vercel/analytics/next";
@@ -83,6 +84,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full bg-white text-nyvox-black">
+        <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
         <WhatsAppButton />
         <Analytics />

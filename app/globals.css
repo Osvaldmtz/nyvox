@@ -33,3 +33,36 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+
+@keyframes nyvox-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.nyvox-marquee-track {
+  animation: nyvox-marquee 40s linear infinite;
+}
+
+.group:hover .nyvox-marquee-track {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+
+  body a,
+  body button,
+  body input,
+  body textarea,
+  body select,
+  body [role="button"],
+  body .cursor-pointer {
+    cursor: none;
+  }
+}
