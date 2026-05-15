@@ -36,6 +36,18 @@ export function Services() {
             </article>
           ))}
         </div>
+
+        <div className="mt-16 border-t border-gray-200 py-16 text-center">
+          <p className="text-2xl font-medium tracking-tight text-nyvox-black md:text-3xl">
+            ¿Listos para construir algo juntos?
+          </p>
+          <Link
+            href="/#contacto"
+            className="mt-6 inline-flex h-14 items-center gap-2 rounded-full bg-[#1464F0] px-8 font-medium text-white transition-colors hover:bg-black"
+          >
+            Hablemos →
+          </Link>
+        </div>
       </div>
     </section>
   );

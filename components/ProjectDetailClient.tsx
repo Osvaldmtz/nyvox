@@ -133,16 +133,51 @@ export function ProjectDetailClient({
         </div>
       </motion.section>
 
+      <section className="mx-auto max-w-3xl px-8 py-32 text-center">
+        <motion.h3
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease }}
+          className="text-4xl font-bold tracking-tight text-black md:text-5xl"
+        >
+          ¿Tienes un proyecto similar?
+        </motion.h3>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1, ease }}
+          className="mt-4 text-lg text-gray-500"
+        >
+          Conversemos sobre cómo podemos ayudarte a construirlo.
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2, ease }}
+          className="mt-8"
+        >
+          <Link
+            href="/#contacto"
+            className="inline-flex h-14 items-center gap-2 rounded-full bg-[#1464F0] px-8 font-medium text-white transition-colors hover:bg-black"
+          >
+            Iniciar proyecto →
+          </Link>
+        </motion.div>
+      </section>
+
       {project.liveUrl ? (
         <motion.section className="py-16 text-center" {...inView}>
-          <a
+          <Link
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#1464F0] px-10 py-4 text-[15px] font-medium tracking-tight text-white transition-opacity hover:opacity-90"
           >
             Ver sitio en vivo →
-          </a>
+          </Link>
         </motion.section>
       ) : null}
 
