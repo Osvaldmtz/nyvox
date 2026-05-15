@@ -75,12 +75,19 @@ export const projects: Project[] = [
     year: 2025,
     status: "live",
     longDescription:
-      "Plataforma de evaluación psicométrica de candidatos para procesos de selección. Permite a empresas aplicar baterías de tests, generar reportes comparativos y tomar decisiones de contratación basadas en datos.\n\nEl enfoque es reducir fricción para el candidato y tiempo administrativo para el reclutador, manteniendo validez psicométrica y una narrativa clara para el cliente interno.",
+      "Plataforma de evaluación psicométrica de candidatos para procesos de selección. Permite a empresas aplicar baterías de tests, generar reportes comparativos automáticos y tomar decisiones de contratación basadas en datos. Diseñada para consultoras de capital humano y departamentos de Talento internos.",
     challenge:
-      "El cliente, una consultora de capital humano, necesitaba digitalizar su proceso de evaluación que era manual y consumía días de trabajo administrativo por cada candidato.",
+      "El cliente, una consultora de capital humano, necesitaba digitalizar su proceso de evaluación que era manual y consumía días de trabajo administrativo por cada candidato. Cada batería de tests se aplicaba en papel, se calificaba a mano y se entregaba el reporte como un PDF estático sin posibilidad de comparación.",
     solution:
-      "Construimos una plataforma white-label donde el cliente puede crear procesos de selección personalizados, asignar evaluaciones a candidatos por email, y obtener reportes ejecutivos con scoring automático y recomendaciones de fit cultural.",
-    technologies: ["Next.js", "Supabase", "Resend", "Recharts", "Tailwind"],
+      "Construimos una plataforma white-label donde el cliente puede crear procesos de selección personalizados, asignar evaluaciones a candidatos por email, y obtener reportes ejecutivos con scoring automático y recomendaciones de fit cultural. Los candidatos hacen los tests online en cualquier dispositivo y los resultados se procesan en tiempo real.",
+    technologies: [
+      "Next.js",
+      "Supabase",
+      "Resend",
+      "Recharts",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
     liveUrl: "https://frisa-talent.vercel.app",
   },
   {
@@ -93,17 +100,18 @@ export const projects: Project[] = [
     year: 2025,
     status: "concept",
     longDescription:
-      "Manna Kid es una aplicación móvil de aprendizaje interactivo para niños de 4 a 10 años. Combina juegos educativos con un panel para padres que permite seguir el progreso de aprendizaje en lectoescritura, matemáticas y pensamiento crítico.\n\nLa propuesta equilibra micro-sesiones cortas, feedback inmediato y rutas de aprendizaje adaptativas para que el niño mantenga atención sin saturación de pantalla.",
+      "Manna Kid es una aplicación móvil de aprendizaje interactivo para niños de 4 a 10 años. Combina juegos educativos con un panel para padres que permite seguir el progreso de aprendizaje en lectoescritura, matemáticas y pensamiento crítico. Diseñada para complementar la educación formal con sesiones cortas y entretenidas.",
     challenge:
-      "Las apps educativas para niños suelen ser entretenidas pero superficiales. Los padres no tienen visibilidad real del aprendizaje. Y las que tienen contenido serio son aburridas para los niños.",
+      "Las apps educativas para niños suelen ser entretenidas pero superficiales pedagógicamente. Los padres no tienen visibilidad real del aprendizaje. Y las que tienen contenido educativo serio son demasiado aburridas para mantener al niño enganchado más de cinco minutos.",
     solution:
-      "Diseñamos una app dual: el niño ve un mundo de juegos coloridos con personajes y misiones, mientras el padre tiene un dashboard con métricas de tiempo, áreas dominadas y reportes semanales. Sistema de gamificación con coleccionables, niveles y rewards físicos opcionales.",
+      "Diseñamos una app dual: el niño ve un mundo de juegos coloridos con personajes y misiones, mientras el padre tiene un dashboard con métricas de tiempo invertido, áreas dominadas y reportes semanales por email. Sistema de gamificación con coleccionables, niveles, rewards físicos opcionales y progresión adaptativa según el desempeño del niño.",
     technologies: [
       "React Native",
       "Supabase",
       "Stripe",
       "RevenueCat",
       "Lottie",
+      "TypeScript",
     ],
   },
   {
@@ -116,17 +124,18 @@ export const projects: Project[] = [
     year: 2025,
     status: "concept",
     longDescription:
-      "Plataforma de gestión de proyectos para constructoras modernas. Centraliza presupuestos, cronogramas, control de obra, gestión de subcontratistas y comunicación con cliente final en una sola herramienta.\n\nLa visión es reemplazar el caos de hojas desconectadas por un único sistema de verdad operativa, con permisos por rol y bitácoras que aguantan litigios y auditorías de obra.",
+      "Plataforma de gestión de proyectos para constructoras modernas. Centraliza presupuestos, cronogramas, control de obra, gestión de subcontratistas y comunicación con cliente final en una sola herramienta. Pensada para constructoras medianas que necesitan profesionalizar su operación sin pagar enterprise software.",
     challenge:
-      "Las constructoras medianas trabajan con Excel, WhatsApp y planos en PDF. Cuando un proyecto tiene 5+ subcontratistas y 100+ partidas, la coordinación se vuelve caótica y los retrasos son la norma.",
+      "Las constructoras medianas trabajan con Excel, WhatsApp y planos en PDF. Cuando un proyecto tiene cinco o más subcontratistas y cien partidas, la coordinación se vuelve caótica, los retrasos son la norma y el cliente final pierde visibilidad de su obra.",
     solution:
-      "Software modular que cubre el ciclo completo: presupuestación con APUs locales, cronograma Gantt interactivo, control de avance por partidas con fotografías, gestión de RFIs y un portal para el cliente final que ve su obra en tiempo real.",
+      "Software modular que cubre el ciclo completo del proyecto: presupuestación con APUs locales, cronograma Gantt interactivo, control de avance por partidas con fotografías, gestión de RFIs entre stakeholders y un portal para el cliente final que ve su obra en tiempo real con fotos diarias y reportes semanales.",
     technologies: [
       "Next.js",
       "Supabase",
       "PostgreSQL",
       "Mapbox",
-      "Tailwind",
+      "Tailwind CSS",
+      "TypeScript",
     ],
   },
   {
@@ -138,17 +147,18 @@ export const projects: Project[] = [
     year: 2025,
     status: "concept",
     longDescription:
-      "Nuvo Pay es una wallet digital para pagos cotidianos en Colombia. Integra tarjetas, transferencias PSE, pagos a contactos y pagos QR en una experiencia móvil simple y confiable.\n\nEl roadmap contempla antifraud en tiempo real, límites dinámicos y educación financiera in-app para usuarios que recién migran del efectivo al digital.",
+      "Nuvo Pay es una wallet digital para pagos cotidianos en Colombia. Integra tarjetas, transferencias PSE, pagos a contactos y pagos QR en una experiencia móvil simple y confiable. Pensada para usuarios que están cansados de tener cinco apps distintas para hacer pagos diarios.",
     challenge:
-      "El mercado de pagos digitales en Colombia está fragmentado entre apps de bancos lentas y wallets sin integración bancaria robusta. El usuario promedio tiene 3 apps distintas para hacer pagos diarios.",
+      "El mercado de pagos digitales en Colombia está fragmentado entre apps de bancos lentas y wallets sin integración bancaria robusta. El usuario promedio tiene tres apps distintas para pagar servicios, transferir a amigos y comprar en comercios.",
     solution:
-      "Wallet unificada con onboarding KYC en 3 minutos, conexión bancaria vía Open Banking, transferencias gratis entre usuarios Nuvo, pagos QR sin comisión y un programa de cashback gamificado.",
+      "Wallet unificada con onboarding KYC en tres minutos, conexión bancaria vía Open Banking, transferencias instantáneas gratis entre usuarios Nuvo, pagos QR sin comisión para el comerciante y un programa de cashback gamificado. Cumple con normativa de la Superfinanciera de Colombia.",
     technologies: [
       "React Native",
       "Node.js",
       "PostgreSQL",
       "AWS",
       "Open Banking APIs",
+      "TypeScript",
     ],
   },
   {
@@ -161,12 +171,18 @@ export const projects: Project[] = [
     year: 2025,
     status: "concept",
     longDescription:
-      "Sistema de reservas para restaurantes boutique. Permite gestionar reservas, mesas, lista de espera y comunicación con clientes desde una tablet en el host stand.\n\nIncluye reglas de capacidad por turno, preferencias de mesa y comunicación SMS discreta para no interrumpir el servicio en sala.",
+      "Sistema de reservas para restaurantes boutique. Permite gestionar reservas, mesas, lista de espera y comunicación con clientes desde una tablet en el host stand. Diseñado para restaurantes de quince a cincuenta cubiertos que no necesitan complejidad enterprise.",
     challenge:
-      "Los restaurantes boutique en Colombia no encuentran un sistema de reservas que se ajuste a su operación: la mayoría son demasiado complejos o son solo software gringo con UX confusa.",
+      "Los restaurantes boutique en Colombia no encuentran un sistema de reservas que se ajuste a su operación. La mayoría son demasiado complejos para su tamaño, o son software gringo con UX confusa y precios en dólares que no tienen sentido para el mercado local.",
     solution:
-      "Aplicación web optimizada para tablet con interfaz minimalista, plano de mesas interactivo, gestión de lista de espera con SMS automático, integración con Google Calendar y reportes de ocupación para el chef.",
-    technologies: ["Next.js", "Supabase", "Twilio SMS", "Tailwind"],
+      "Aplicación web optimizada para tablet con interfaz minimalista, plano de mesas interactivo arrastrable, gestión de lista de espera con SMS automático a clientes, integración con Google Calendar del chef y reportes de ocupación con horarios picos y promedio de tickets.",
+    technologies: [
+      "Next.js",
+      "Supabase",
+      "Twilio SMS",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
   },
 ];
 
