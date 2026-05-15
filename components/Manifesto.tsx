@@ -2,7 +2,7 @@ export function Manifesto() {
   return (
     <section
       id="manifesto"
-      className="border-b border-black/[0.06] bg-white py-32 md:py-48"
+      className="border-b border-black/[0.06] bg-white pt-16 pb-32 md:pt-24 md:pb-48"
     >
       <div className="mx-auto max-w-[900px] px-6 text-center md:px-10 lg:px-14">
         <p
