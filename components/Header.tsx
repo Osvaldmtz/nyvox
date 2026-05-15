@@ -223,7 +223,7 @@ export function Header() {
               Menú de navegación
             </h2>
 
-            <div className="flex shrink-0 justify-end px-6 pb-2 pt-6 md:px-10">
+            <div className="flex shrink-0 justify-end px-8 pb-2 pt-6">
               <button
                 ref={closeButtonRef}
                 type="button"
@@ -235,12 +235,12 @@ export function Header() {
               </button>
             </div>
 
-            <div className="flex min-h-0 flex-1 flex-col justify-center px-6">
+            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-8 pb-10 pt-32">
               <motion.nav
                 variants={linkListVariants}
                 initial="hidden"
                 animate="visible"
-                className="flex flex-col items-center gap-8"
+                className="flex flex-col items-start gap-6"
                 aria-label="Secciones"
               >
                 {links.map((item) => (
@@ -248,20 +248,18 @@ export function Header() {
                     <Link
                       href={item.href}
                       onClick={closeMenu}
-                      className="block text-center text-5xl font-medium tracking-tight text-black transition-colors duration-300 hover:text-nyvox-blue"
+                      className="block text-left text-3xl font-bold tracking-tight text-black transition-colors duration-300 hover:text-nyvox-blue"
                     >
                       {item.label}
                     </Link>
                   </motion.div>
                 ))}
               </motion.nav>
-            </div>
 
-            <div className="shrink-0 px-6 pb-10 pt-8">
               <Link
                 href="#contacto"
                 onClick={closeMenu}
-                className="mx-auto flex max-w-sm justify-center rounded-full bg-nyvox-blue px-8 py-4 text-center text-[17px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
+                className="mx-auto mt-12 flex h-14 w-full max-w-sm items-center justify-center rounded-full bg-nyvox-blue px-8 text-center text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
               >
                 Iniciar proyecto
               </Link>
