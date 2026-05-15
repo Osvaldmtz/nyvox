@@ -27,8 +27,8 @@ const wordMotion = {
 
 export function Hero() {
   return (
-    <section className="border-b border-black/[0.06] bg-white pt-28 md:pt-36">
-      <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-32 md:gap-16 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-20 lg:px-14 lg:py-48">
+    <section className="border-b border-black/[0.06] bg-white pt-14 md:pt-[4.5rem]">
+      <div className="mx-auto grid max-w-[1400px] gap-12 px-6 pt-16 pb-32 md:gap-16 md:px-10 md:pt-16 md:pb-32 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-20 lg:px-14 lg:pt-24 lg:pb-48">
         <div className="flex flex-col justify-center gap-10">
           <motion.h1
             variants={container}
