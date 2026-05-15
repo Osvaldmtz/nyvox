@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nyvox.co"),
+  metadataBase: new URL("https://nyvox.io"),
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -29,30 +29,49 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
   },
-  title: "Nyvox — Software hecho con visión.",
+  title: {
+    default: "Nyvox — Software hecho con visión.",
+    template: "%s | Nyvox",
+  },
   description:
-    "Diseñamos y construimos productos digitales para empresas que quieren crecer. Apps, SaaS, ecommerce y software a la medida — desde Colombia para el mundo.",
+    "Diseñamos y construimos productos digitales para empresas que quieren crecer. Apps, SaaS, ecommerce y software a la medida desde Colombia para el mundo.",
+  keywords: [
+    "software",
+    "desarrollo",
+    "apps",
+    "saas",
+    "ecommerce",
+    "colombia",
+    "agencia",
+    "estudio",
+    "next.js",
+  ],
+  authors: [{ name: "Nyvox" }],
+  creator: "Nyvox",
   openGraph: {
+    type: "website",
+    locale: "es_CO",
+    url: "https://nyvox.io",
+    siteName: "Nyvox",
     title: "Nyvox — Software hecho con visión.",
     description:
-      "Diseñamos y construimos productos digitales para empresas que quieren crecer.",
-    locale: "es_CO",
-    type: "website",
-    images: [
-      {
-        url: "/hero.jpg",
-        width: 1920,
-        height: 1080,
-        alt: "Nyvox",
-      },
-    ],
+      "Estudio de software en Colombia. Apps, SaaS y productos digitales hechos a medida.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nyvox — Software hecho con visión.",
-    description:
-      "Diseñamos y construimos productos digitales para empresas que quieren crecer.",
-    images: ["/hero.jpg"],
+    description: "Estudio de software en Colombia.",
+    creator: "@nyvox",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
