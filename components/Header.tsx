@@ -21,7 +21,7 @@ const easeEditorial = [0.22, 1, 0.36, 1] as const;
 
 const links = [
   { href: "#manifesto", label: "Manifiesto" },
-  { href: "#servicios", label: "Servicios" },
+  { href: "/servicios", label: "Servicios" },
   { href: "#trabajo", label: "Trabajo" },
   { href: "#proceso", label: "Proceso" },
   { href: "#nosotros", label: "Nosotros" },

@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1.0,
     },
+    {
+      url: "https://nyvox.io/servicios",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...projects.map((project) => ({
       url: `https://nyvox.io/proyectos/${project.slug}`,
       lastModified: new Date(),
