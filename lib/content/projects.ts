@@ -98,7 +98,7 @@ export const projects: Project[] = [
       "Aprendizaje interactivo para niños y familias.",
     image: "/work/manna-kid.jpg",
     year: 2025,
-    status: "concept",
+    status: "live",
     longDescription:
       "Manna Kid es una aplicación móvil de aprendizaje interactivo para niños de 4 a 10 años. Combina juegos educativos con un panel para padres que permite seguir el progreso de aprendizaje en lectoescritura, matemáticas y pensamiento crítico. Diseñada para complementar la educación formal con sesiones cortas y entretenidas.",
     challenge:
@@ -113,6 +113,7 @@ export const projects: Project[] = [
       "Lottie",
       "TypeScript",
     ],
+    liveUrl: "https://app.manakid.com",
   },
   {
     slug: "vertice-build",
