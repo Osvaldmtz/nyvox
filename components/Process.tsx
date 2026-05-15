@@ -25,16 +25,16 @@ export function Process() {
   return (
     <section
       id="proceso"
-      className="border-b border-black/[0.06] bg-white py-32 md:py-48"
+      className="border-b border-black/[0.06] bg-white py-16 md:py-24"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
         <h2
-          className="mb-20 font-medium tracking-[-0.035em] text-nyvox-black md:mb-28"
+          className="mb-10 font-medium tracking-[-0.035em] text-nyvox-black md:mb-14"
           style={{ fontSize: "clamp(40px, 5vw, 72px)" }}
         >
           Proceso
         </h2>
-        <div className="grid gap-16 md:grid-cols-2 md:gap-x-12 md:gap-y-20 lg:grid-cols-4 lg:gap-x-8">
+        <div className="grid gap-8 md:grid-cols-2 md:gap-x-6 md:gap-y-10 lg:grid-cols-4 lg:gap-x-4">
           {steps.map((step) => (
             <div key={step.n} className="flex flex-col gap-6">
               <span

@@ -46,9 +46,9 @@ export function Contact() {
   return (
     <section
       id="contacto"
-      className="border-b border-black/[0.06] bg-white py-32 md:py-48"
+      className="border-b border-black/[0.06] bg-white py-16 md:py-24"
     >
-      <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:gap-24 md:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-32 lg:px-14">
+      <div className="mx-auto grid max-w-[1400px] gap-8 px-6 md:gap-12 md:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:px-14">
         <div>
           <h2
             className="font-medium tracking-[-0.035em] text-nyvox-black"

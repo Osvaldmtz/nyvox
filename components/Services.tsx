@@ -5,10 +5,10 @@ export function Services() {
   return (
     <section
       id="servicios"
-      className="border-b border-black/[0.06] bg-white py-32 md:py-48"
+      className="border-b border-black/[0.06] bg-white py-16 md:py-24"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-14">
-        <div className="mb-16 flex flex-col gap-6 md:mb-24 md:flex-row md:items-end md:justify-between">
+        <div className="mb-8 flex flex-col gap-6 md:mb-12 md:flex-row md:items-end md:justify-between">
           <h2
             className="max-w-[14ch] font-medium tracking-[-0.035em] text-nyvox-black"
             style={{ fontSize: "clamp(40px, 5vw, 72px)" }}

@@ -5,9 +5,9 @@ export function About() {
   return (
     <section
       id="nosotros"
-      className="border-b border-black/[0.06] bg-white py-32 md:py-48"
+      className="border-b border-black/[0.06] bg-white py-16 md:py-24"
     >
-      <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 md:gap-20 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-24 lg:px-14">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-7 px-6 md:gap-10 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-12 lg:px-14">
         <div className="order-2 lg:order-1">
           <h2
             className="font-medium tracking-[-0.035em] text-nyvox-black"
