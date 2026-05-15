@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const heading = "Software hecho con visión.";
-const words = heading.split(" ");
+const headingSegments = ["Software", "hecho con", "visión."];
 
 const easeEditorial = [0.22, 1, 0.36, 1] as const;
 
@@ -38,13 +37,13 @@ export function Hero() {
             className="max-w-[14ch] font-medium leading-[0.95] tracking-[-0.04em] text-nyvox-black"
             style={{ fontSize: "clamp(56px, 10vw, 140px)" }}
           >
-            {words.map((word, i) => (
+            {headingSegments.map((segment, i) => (
               <motion.span
-                key={`${word}-${i}`}
+                key={`${segment}-${i}`}
                 variants={wordMotion}
-                className="inline-block mr-[0.2em] last:mr-0"
+                className={`inline-block mr-[0.2em] last:mr-0 ${segment === "hecho con" ? "whitespace-nowrap" : ""}`}
               >
-                {word}
+                {segment}
               </motion.span>
             ))}
           </motion.h1>
