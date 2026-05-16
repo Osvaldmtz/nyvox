@@ -54,8 +54,8 @@ function AnimatedCounter({
 export function Stats() {
   const stats = [
     { value: 100, suffix: "+", label: "Proyectos en nuestra trayectoria" },
-    { value: 16, suffix: " años", label: "Construyendo software" },
-    { value: 3, suffix: " países", label: "Donde operan nuestros clientes" },
+    { value: 16, suffix: "", label: "Años construyendo software" },
+    { value: 3, suffix: "", label: "Países donde operan nuestros clientes" },
     { value: 12, suffix: "+", label: "Industrias atendidas" },
   ];
 
