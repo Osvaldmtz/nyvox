@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { SplineHero } from "./ui/SplineHero";
 
 const headingSegments = ["Software", "hecho con", "visión."];
 
@@ -27,13 +27,9 @@ const wordMotion = {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden border-b border-black/[0.06] bg-white pt-14 md:pt-[4.5rem]">
-      {/* Modelo 3D de Spline como fondo */}
-      <SplineHero />
-
-      {/* Contenido del Hero encima */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-3.5rem)] w-full max-w-[1400px] flex-col items-start justify-end px-8 pb-32 pt-16 md:min-h-[calc(100svh-4.5rem)] md:px-16 md:pt-32">
-        <div className="flex max-w-3xl flex-col gap-10">
+    <section className="border-b border-black/[0.06] bg-white pt-14 md:pt-[4.5rem]">
+      <div className="mx-auto grid max-w-[1400px] gap-12 px-6 pt-16 pb-16 md:gap-16 md:px-10 md:pt-16 md:pb-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-20 lg:px-14 lg:pt-24 lg:pb-24">
+        <div className="flex flex-col justify-center gap-10">
           <motion.h1
             variants={container}
             initial="hidden"
@@ -74,6 +70,21 @@ export function Hero() {
             </Link>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.985 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, ease: easeEditorial, delay: 0.15 }}
+          className="relative aspect-video w-full overflow-hidden bg-nyvox-cream"
+        >
+          <Image
+            src="/hero.jpg"
+            alt="Nyvox — desarrollo de software"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover"
+          />
+        </motion.div>
       </div>
     </section>
   );
