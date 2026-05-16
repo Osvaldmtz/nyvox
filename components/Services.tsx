@@ -1,3 +1,4 @@
+import { MagneticButton } from "@/components/ui/MagneticButton";
 import { services } from "@/lib/content/services";
 import Link from "next/link";
 
@@ -41,12 +42,9 @@ export function Services() {
           <p className="text-2xl font-medium tracking-tight text-nyvox-black md:text-3xl">
             ¿Listos para construir algo juntos?
           </p>
-          <Link
-            href="/#contacto"
-            className="mt-6 inline-flex h-14 items-center gap-2 rounded-full bg-[#1464F0] px-8 font-medium text-white transition-colors hover:bg-black"
-          >
+          <MagneticButton href="/#contacto" className="mt-6">
             Hablemos →
-          </Link>
+          </MagneticButton>
         </div>
       </div>
     </section>

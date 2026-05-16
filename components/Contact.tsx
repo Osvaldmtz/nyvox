@@ -1,15 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useMagneticEffect } from "@/hooks/useMagneticEffect";
 import {
   type ChangeEvent,
   type FormEvent,
+  type ReactNode,
   useState,
 } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function MagneticSubmitButton({
+  disabled,
+  children,
+}: {
+  disabled: boolean;
+  children: ReactNode;
+}) {
+  const ref = useMagneticEffect(0.2);
+  return (
+    <button
+      type="submit"
+      disabled={disabled}
+      ref={ref as React.RefObject<HTMLButtonElement>}
+      className="rounded-full bg-nyvox-blue px-9 py-3.5 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      {children}
+    </button>
+  );
+}
 
 export function Contact() {
   const [status, setStatus] = useState<Status>("idle");
@@ -211,13 +233,9 @@ export function Contact() {
             />
 
             <div>
-              <button
-                type="submit"
-                disabled={submitDisabled}
-                className="rounded-full bg-nyvox-blue px-9 py-3.5 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-              >
+              <MagneticSubmitButton disabled={submitDisabled}>
                 {submitLabel}
-              </button>
+              </MagneticSubmitButton>
               {status === "error" && (
                 <p className="mt-3 text-sm text-red-600">{errorMessage}</p>
               )}

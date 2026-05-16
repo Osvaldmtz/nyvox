@@ -1,6 +1,7 @@
 "use client";
 
 import type { Project } from "@/lib/content/projects";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -159,12 +160,9 @@ export function ProjectDetailClient({
           transition={{ duration: 0.5, delay: 0.2, ease }}
           className="mt-8"
         >
-          <Link
-            href="/#contacto"
-            className="inline-flex h-14 items-center gap-2 rounded-full bg-[#1464F0] px-8 font-medium text-white transition-colors hover:bg-black"
-          >
+          <MagneticButton href="/#contacto">
             Iniciar proyecto →
-          </Link>
+          </MagneticButton>
         </motion.div>
       </section>
 

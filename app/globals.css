@@ -47,6 +47,19 @@ body {
   animation: marquee 40s linear infinite;
 }
 
+@keyframes tech-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-tech-marquee {
+  animation: tech-marquee 50s linear infinite;
+}
+
 @media (min-width: 768px) {
   body {
     cursor: none;

@@ -1,8 +1,8 @@
 "use client";
 
+import { MagneticButton } from "@/components/ui/MagneticButton";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const headingSegments = ["Software", "hecho con", "visión."];
 
@@ -62,12 +62,12 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.72, duration: 0.55, ease: easeEditorial }}
           >
-            <Link
+            <MagneticButton
               href="#contacto"
-              className="inline-flex rounded-full bg-nyvox-blue px-8 py-3.5 text-[15px] font-medium tracking-tight text-white transition-opacity duration-300 hover:opacity-90"
+              className="text-[15px] tracking-tight"
             >
               Iniciar proyecto
-            </Link>
+            </MagneticButton>
           </motion.div>
         </div>
         <motion.div
