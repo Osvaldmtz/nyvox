@@ -48,10 +48,10 @@ function AnimatedCounter({
 
 export function Stats() {
   const stats = [
-    { value: 15, suffix: "+", label: "Proyectos entregados" },
-    { value: 7, suffix: " años", label: "En desarrollo de software" },
+    { value: 100, suffix: "+", label: "Proyectos en nuestra trayectoria" },
+    { value: 16, suffix: " años", label: "Construyendo software" },
     { value: 3, suffix: " países", label: "Donde operan nuestros clientes" },
-    { value: 100, suffix: "%", label: "Código a la medida" },
+    { value: 12, suffix: " industrias", label: "Donde tenemos experiencia" },
   ];
 
   return (
