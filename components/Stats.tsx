@@ -39,9 +39,14 @@ function AnimatedCounter({
   }, [isInView, count, to]);
 
   return (
-    <span ref={ref}>
-      {display}
-      {suffix}
+    <span
+      ref={ref}
+      className="inline-block w-full max-w-full leading-none tracking-tighter"
+    >
+      <span className="inline-block min-w-0 max-w-full tabular-nums">
+        {display}
+        {suffix}
+      </span>
     </span>
   );
 }
@@ -51,11 +56,11 @@ export function Stats() {
     { value: 100, suffix: "+", label: "Proyectos en nuestra trayectoria" },
     { value: 16, suffix: " años", label: "Construyendo software" },
     { value: 3, suffix: " países", label: "Donde operan nuestros clientes" },
-    { value: 12, suffix: " industrias", label: "Donde tenemos experiencia" },
+    { value: 12, suffix: "+", label: "Industrias atendidas" },
   ];
 
   return (
-    <section className="border-y border-black/[0.06] px-8 py-32 md:px-16">
+    <section className="border-y border-black/[0.06] px-6 py-32 md:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
           <p className="text-xs uppercase tracking-[0.2em] text-gray-500 md:text-sm">
@@ -63,7 +68,7 @@ export function Stats() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:gap-16">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12 lg:gap-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -75,9 +80,9 @@ export function Stats() {
                 delay: index * 0.1,
                 ease: easeStats,
               }}
-              className="text-center"
+              className="min-w-0 text-center"
             >
-              <div className="text-6xl font-bold tracking-tighter text-[#1464F0] md:text-7xl lg:text-8xl">
+              <div className="text-5xl font-bold leading-none tracking-tighter text-[#1464F0] sm:text-6xl md:text-7xl lg:text-8xl">
                 <AnimatedCounter to={stat.value} suffix={stat.suffix} />
               </div>
               <p className="mt-4 text-sm tracking-tight text-gray-500 md:text-base">
