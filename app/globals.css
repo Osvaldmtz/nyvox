@@ -61,17 +61,14 @@ body {
 }
 
 @media (min-width: 768px) {
-  body {
-    cursor: none;
-  }
-
-  body a,
-  body button,
-  body input,
-  body textarea,
-  body select,
-  body [role="button"],
-  body .cursor-pointer {
+  html.custom-cursor-ready body,
+  html.custom-cursor-ready body a,
+  html.custom-cursor-ready body button,
+  html.custom-cursor-ready body input,
+  html.custom-cursor-ready body textarea,
+  html.custom-cursor-ready body select,
+  html.custom-cursor-ready body [role="button"],
+  html.custom-cursor-ready body .cursor-pointer {
     cursor: none;
   }
 }

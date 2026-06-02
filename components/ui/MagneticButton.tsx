@@ -17,7 +17,7 @@ export function MagneticButton({
   className = "",
   variant = "primary",
 }: MagneticButtonProps) {
-  const ref = useMagneticEffect(0.2);
+  const ref = useMagneticEffect(0.35);
 
   const baseClasses =
     "inline-flex items-center gap-2 h-14 px-8 rounded-full font-medium transition-colors duration-300";

@@ -20,7 +20,7 @@ function MagneticSubmitButton({
   disabled: boolean;
   children: ReactNode;
 }) {
-  const ref = useMagneticEffect(0.2);
+  const ref = useMagneticEffect(0.35);
   return (
     <button
       type="submit"
